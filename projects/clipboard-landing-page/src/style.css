@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply w-full inline-block py-3 text-lg text-center text-white transition-all rounded-full md:max-w-[225px] hover:opacity-70;
+  }
+
+  .btn--cyan {
+    @apply bg-cyan;
+  }
+
+  .btn--blue {
+    @apply bg-blue;
+  }
+}
+
+@layer utilities {
+  .section-title {
+    @apply mb-5 text-3xl font-semibold text-center text-gray-200 lg:mb-7;
+  }
+
+  .section-description {
+    @apply max-w-2xl mx-auto text-lg text-center text-gray-100;
+  }
+
+  .feature-title {
+    @apply mb-4 text-2xl font-semibold text-center text-gray-200 lg:text-left;
+  }
+
+  .feature-description {
+    @apply text-base text-center mx-auto text-gray-100 lg:text-left max-w-[340px];
+  }
+
+  .advantage-image {
+    @apply mx-auto max-w-[30px] mb-5;
+  }
+
+  .advantage-title {
+    @apply mb-5 text-[22px] font-bold text-center;
+  }
+
+  .advantage-description {
+    @apply text-lg text-center text-gray-100 mx-auto max-w-[340px];
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .features-wrapper {
+      grid-template-columns: 60fr 40fr;
+    }
+
+    .footer-links {
+      grid-template-columns: auto 1fr auto;
+    }
+  }
+}
