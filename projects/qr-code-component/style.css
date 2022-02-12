@@ -10,6 +10,10 @@ body {
   font-family: 'Outfit', sans-serif;
 }
 
+header {
+  display: none;
+}
+
 main {
   min-height: 100vh;
   background-color: hsl(212, 45%, 89%);
