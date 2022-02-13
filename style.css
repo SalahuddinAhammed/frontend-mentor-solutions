@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Rubik:wght@400;500&display=swap');
 
 /* General Styles */
 * {
@@ -120,7 +120,13 @@ a {
 .project-title {
   font-weight: 500;
   font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.project-description {
   margin-bottom: 2rem;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
 }
 
 .project-buttons {

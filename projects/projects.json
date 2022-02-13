@@ -1,14 +1,17 @@
 [
   {
     "title": "Order summary component",
+    "description": "A perfect project for newbies who are starting to build confidence with layouts!",
     "tags": ["html", "css"]
   },
   {
     "title": "Clipboard landing page",
+    "description": "Put your layout skills to the test with this HTML & CSS landing page challenge. This challenge includes a design for hover states.",
     "tags": ["html", "css"]
   },
   {
     "title": "QR Code Component",
+    "description": "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
     "tags": ["html", "css"]
   }
 ]

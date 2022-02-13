@@ -55,6 +55,7 @@ function generateHTML(projects) {
           )}"> API </span>
         </div>
         <h2 class="project-title">${project.title}</h2>
+        <p class="project-description">${project.description}</p>
         <div class="project-buttons">
           <a
             href="https://github.com/SalahuddinAhammed/frontend-mentor-solutions/tree/main/projects/${
