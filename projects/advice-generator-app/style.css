@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(220, 22%, 16%);
+}
+
+.card {
+  background-color: hsl(217, 19%, 24%);
+  max-width: 33.75rem;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 3rem;
+  padding-bottom: 0;
+}
+
+.card__subtitle {
+  font-size: 0.8125rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.card__title {
+  font-size: 1.6875rem;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.btn-generate-advice {
+  background-color: hsl(150, 100%, 66%);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 99rem;
+  outline: 0;
+  border: 0;
+  padding: 1.25rem;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  transform: translateY(50%);
+}
+
+.btn-generate-advice:hover {
+  box-shadow: 0 0 16px 6px hsl(150, 100%, 66%);
+}
+
+.hide-for-desktop {
+  display: none;
+}
+
+.attribution {
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 1rem 3.2rem;
+  background-color: hsl(217, 19%, 24%);
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: hsl(150, 100%, 66%);
+  border-bottom: 1px solid currentColor;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    padding: 1.75rem;
+    padding-bottom: 0;
+  }
+
+  .card__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .hide-for-mobile {
+    display: none;
+  }
+
+  .hide-for-desktop {
+    display: block;
+  }
+}

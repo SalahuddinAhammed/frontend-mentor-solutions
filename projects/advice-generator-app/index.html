@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Frontend Mentor | Advice generator app</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js?v=1" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <p class="card__subtitle">Advice #<span class="card__id">{id}</span></p>
+        <h1 class="card__title">
+          <q>
+            It is easy to sit up and take notice, what's difficult is getting up
+            and taking action.
+          </q>
+        </h1>
+        <img
+          src="images/pattern-divider-desktop.svg"
+          alt="pattern divider desktop"
+          class="hide-for-mobile"
+        />
+        <img
+          src="images/pattern-divider-mobile.svg"
+          alt="pattern divider mobile"
+          class="hide-for-desktop"
+        />
+        <button class="btn-generate-advice" title="Generate advice">
+          <img src="images/icon-dice.svg" alt="dice icon" />
+        </button>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        class="attribution__link"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/SalahuddinAhammed"
+        target="_blank"
+        class="attribution__link"
+        >Salahuddin Ahammed</a
+      >.
+    </div>
+  </body>
+</html>
