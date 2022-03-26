@@ -18,5 +18,10 @@
     "title": "Advice generator app",
     "description": "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
     "tags": ["html", "css", "js", "api"]
+  },
+  {
+    "title": "Interactive Rating Component",
+    "description": "This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!",
+    "tags": ["html", "css", "js"]
   }
 ]

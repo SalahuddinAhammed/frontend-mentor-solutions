@@ -1,0 +1,2 @@
+- [ ] Build the thank you page
+- [ ] Improve the design
