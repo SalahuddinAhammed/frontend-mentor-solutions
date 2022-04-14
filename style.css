@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Rubik:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Rubik:wght@400;500&display=swap");
 
 /* General Styles */
 * {
@@ -14,7 +14,7 @@ html {
 
 body {
   background-color: #fafafa;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -68,10 +68,8 @@ a {
 }
 
 .container--project {
-  display: grid;
-  align-items: center;
-  gap: 4.8rem;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  columns: 3;
   padding: 4.8rem 1.6rem;
 }
 
@@ -79,6 +77,8 @@ a {
   border-radius: 0.8rem;
   overflow: hidden;
   border: 1px solid #dbe5e6;
+  margin-bottom: 2.4rem;
+  break-inside: avoid;
 }
 
 .project-info {
@@ -126,7 +126,7 @@ a {
 .project-description {
   margin-bottom: 2rem;
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .project-buttons {
