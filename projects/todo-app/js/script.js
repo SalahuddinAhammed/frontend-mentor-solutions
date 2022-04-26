@@ -10,6 +10,28 @@ const btnClearCompleted = document.querySelector(
 const btnsTodoSort = document.querySelectorAll(".container--todo__sort");
 const btnThemeSwitcher = document.querySelector(".header__theme-switcher");
 
+const lightOrDarkTheme = () => {
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    document.documentElement.classList.add("dark-mode");
+  }
+
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", (event) => {
+      const newColorScheme = event.matches ? "dark" : "light";
+      if (newColorScheme === "light") {
+        document.documentElement.classList.remove("dark-mode");
+      } else {
+        document.documentElement.classList.add("dark-mode");
+      }
+    });
+};
+
+lightOrDarkTheme();
+
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
 localStorage.setItem("todos", JSON.stringify(todos));
 
