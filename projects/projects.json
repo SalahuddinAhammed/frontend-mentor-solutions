@@ -10,7 +10,7 @@
     "tags": ["html", "css"]
   },
   {
-    "title": "QR Code Component",
+    "title": "QR code component",
     "description": "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
     "tags": ["html", "css"]
   },
@@ -20,7 +20,7 @@
     "tags": ["html", "css", "js", "api"]
   },
   {
-    "title": "Interactive Rating Component",
+    "title": "Interactive rating component",
     "description": "This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!",
     "tags": ["html", "css", "js"]
   },
