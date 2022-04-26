@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+:root {
+  --color-primray: hsl(220, 98%, 61%);
+  --color-gradient: linear-gradient(
+    to left,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+  --color-neutral-100: hsl(0, 0%, 98%);
+  --color-neutral-200: hsl(236, 33%, 92%);
+  --color-neutral-300: hsl(233, 11%, 84%);
+  --color-neutral-400: hsl(236, 9%, 61%);
+  --color-neutral-500: hsl(235, 19%, 35%);
+}
+
+.dark-mode {
+  --color-neutral-100: hsl(235, 21%, 11%);
+  --color-neutral-200: hsl(235, 24%, 19%);
+  --color-neutral-300: hsl(234, 39%, 85%);
+  --color-neutral-400: hsl(234, 11%, 52%);
+  --color-neutral-500: hsl(233, 14%, 35%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.container {
+  max-width: 33.75rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  background-image: url(../images/bg-desktop-light.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 18.75rem;
+  padding-top: 4.875rem;
+}
+
+.header__branding {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.9375rem;
+  color: var(--color-neutral-100);
+}
+
+.container--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container--todo {
+  transform: translateY(-8.75rem);
+}
+
+.header__theme-switcher {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__theme-switcher-img--light {
+  display: none;
+}
+
+.dark-mode .header__theme-switcher-img--dark {
+  display: none;
+}
+
+.dark-mode .header__theme-switcher-img--light {
+  display: block;
+}
+
+.todo__new-todo {
+  margin-bottom: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.todo__new-todo,
+.todo {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-100);
+  padding: 0.75rem 1.5rem;
+  height: 4rem;
+  gap: 1.5rem;
+}
+
+.todo__icon {
+  background-color: var(--color-neutral-100);
+  border: 1px solid var(--color-neutral-300);
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.375rem;
+  border-radius: 99rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.todo__icon-image {
+  display: none;
+}
+
+.todo__new-todo--completed .todo__icon-image,
+.todo--completed .todo__icon-image {
+  display: block;
+}
+
+.todo__new-todo--completed .todo__icon,
+.todo--completed .todo__icon {
+  background-image: var(--color-gradient);
+}
+
+.todo__new-todo-input,
+.todo__title {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: var(--color-neutral-100);
+  font-size: 1.125rem;
+  color: var(--color-neutral-500);
+}
+
+.todo-and-action-wrapper {
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 0.625rem 0.9375rem -0.1875rem rgb(0 0 0 / 0.1),
+    0 0.25rem 0.375rem -0.25rem rgb(0 0 0 / 0.1);
+  background-color: var(--color-neutral-100);
+}
+
+.todo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-wrapper[data-sort="active"] .todo--completed {
+  display: none;
+}
+
+.todo-wrapper[data-sort="completed"] .todo {
+  display: none;
+}
+
+.todo-wrapper[data-sort="completed"] .todo--completed {
+  display: flex;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid var(--color-neutral-300);
+}
+
+.todo--completed .todo__title {
+  text-decoration: line-through;
+  color: var(--color-neutral-300);
+}
+
+.todo__delete {
+  display: none;
+  max-width: 1.25rem;
+  flex-basis: 100%;
+  cursor: pointer;
+}
+
+.todo:hover .todo__delete {
+  display: flex;
+}
+
+.container--todo__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-neutral-400);
+  padding: 1.25rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.container--todo__sort-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.container--todo__sort {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.container--todo__clear-completed:hover {
+  cursor: pointer;
+}
+
+.container--todo__sort:hover,
+.container--todo__clear-completed:hover {
+  cursor: pointer;
+  color: var(--color-neutral-500);
+}
+
+.container--todo__sort--active {
+  color: var(--color-primray);
+}
+
+.container--todo__clear-completed {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.footer {
+  transform: translateY(-6.25rem);
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.attribution__link {
+  color: var(--color-primray);
+  text-decoration: none;
+  padding: 0.125rem 0;
+}
+
+.attribution__link {
+  border-bottom: 1px solid currentColor;
+}
+
+.dark-mode body {
+  background-color: hsl(235, 21%, 11%);
+}
+
+.dark-mode .header {
+  background-image: url(../images/bg-desktop-dark.jpg);
+}
+
+.dark-mode .header__branding {
+  color: hsl(0, 0%, 98%);
+}
+
+.dark-mode .todo__new-todo-input,
+.dark-mode .todo__title,
+.dark-mode .container--todo__sort:hover,
+.dark-mode .container--todo__clear-completed:hover,
+.dark-mode .attribution {
+  color: var(--color-neutral-300);
+}
+
+@media screen and (max-width: 23.4375em) {
+  .header {
+    background-image: url(../images/bg-mobile-light.jpg);
+  }
+
+  .container--todo__actions {
+    justify-content: center;
+  }
+
+  .container--todo__count {
+    display: none;
+  }
+
+  .container--todo__clear-completed {
+    display: none;
+  }
+
+  .dark-mode .header {
+    background-image: url(../images/bg-mobile-dark.jpg);
+  }
+}

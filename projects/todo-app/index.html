@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Frontend Mentor | Todo app</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container--header">
+        <span class="header__branding">Todo</span>
+        <button class="header__theme-switcher">
+          <img
+            src="./images/icon-moon.svg"
+            class="header__theme-switcher-img--dark"
+            alt="Moon icon"
+          />
+          <img
+            src="./images/icon-sun.svg"
+            class="header__theme-switcher-img--light"
+            alt="Sun icon"
+          />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="container container--todo">
+        <form class="todo__new-todo">
+          <div class="todo__icon todo__icon--new-todo">
+            <img
+              src="./images/icon-check.svg"
+              alt="check icon"
+              class="todo__icon-image"
+            />
+          </div>
+          <input
+            type="text"
+            class="todo__new-todo-input"
+            placeholder="Create a new todo..."
+          />
+        </form>
+
+        <div class="todo-and-action-wrapper">
+          <div class="todo-wrapper">&nbsp;</div>
+          <div class="container--todo__actions">
+            <p class="container--todo__count">
+              <span class="contianer--todo__number">0</span> items left
+            </p>
+            <div class="container--todo__sort-wrapper">
+              <button
+                class="container--todo__sort container--todo__sort--active"
+                data-sort="all"
+              >
+                All
+              </button>
+              <button class="container--todo__sort" data-sort="active">
+                Active
+              </button>
+              <button class="container--todo__sort" data-sort="completed">
+                Completed
+              </button>
+            </div>
+            <button class="container--todo__clear-completed">
+              Clear Completed
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer container">
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          class="attribution__link"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/SalahuddinAhammed"
+          target="_blank"
+          class="attribution__link"
+          >Salahuddin Ahammed</a
+        >.
+      </div>
+    </footer>
+
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>

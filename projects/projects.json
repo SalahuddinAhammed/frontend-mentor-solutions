@@ -23,5 +23,10 @@
     "title": "Interactive Rating Component",
     "description": "This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!",
     "tags": ["html", "css", "js"]
+  },
+  {
+    "title": "Todo app",
+    "description": "The classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering for anyone wanting an extra test.",
+    "tags": ["html", "css", "js"]
   }
 ]
